@@ -1,0 +1,72 @@
+<html>
+<head></head>
+<style>
+	body{
+		box-sizing: border-box;
+		background-color: #4C7B8B;
+		animation-name: bgcolor;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes bgcolor{
+		0%{
+			background-color: #4C7B8B;
+		}
+		25%{
+			background-color: #355e85;
+		}
+		50%{
+			background-color: #1d466d;
+		}
+		100%{
+			background-color: #163552;
+		}
+	}
+	.gallery{
+		align-items: center;
+	}
+	.images{
+		display: inline-block;
+		border:2px solid black;
+		margin-left: 20px;
+		margin-top: 20px;
+		border-radius: 5px;
+	}
+	.images:hover{
+		border:5px solid black;
+	}
+</style>
+<body>
+	<div class="gallery">
+		<div class="images">
+			<img src="1.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="2.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="3.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="4.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="5.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="6.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="7.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="8.jpg" width="350" height="350">
+		</div>
+		<div class="images">
+			<img src="9.jpg" width="350" height="350">
+		</div>
+	</div>
+</body>
+</html>

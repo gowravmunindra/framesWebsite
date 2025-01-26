@@ -1,0 +1,81 @@
+<html>
+<head></head>
+<style>
+    body{
+        background-image: url(8.jpg);
+        background-size: cover;
+        animation-name: image-slider;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes image-slider{
+        0%{
+            background-image: url(8.jpg);
+            background-size: cover;
+        }
+        50%{
+            background-image: url(11.jpg);
+            background-size: cover;
+        }
+        100%{
+            background-image: url(12.jpg);
+            background-size: cover;
+        }
+    }
+    h1{
+        color:white;
+        text-align:center;
+    }
+    .form-outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        color:white;
+        background-color: rgba(0,0,0,0.5);
+        height:500px;
+        width:500px;
+        margin-top: 20px;
+        border:2px solid black;
+        border-radius: 10px;
+    }
+    .main:hover{
+        border:5px solid black;
+    }
+</style>
+<body>
+    <div class="form-outer">
+        <form class="main">
+            <h1>FeedBack Form</h1>
+            Name:<br><input type="text" value="Enter Your name"><br><br>
+            Interests:<br>
+            <input type="checkbox"> Programming<br>
+            <input type="checkbox"> Music<br>
+            <input type="checkbox"> Sports<br>
+            <input type="checkbox"> Direction<br>
+            <br>
+            Gender:<br>
+            <input type="radio">Male<br>
+            <input type="radio">Female<br>
+            <input type="radio">Others<br>
+            <br>
+            Country:<br>
+            <select><option>Select</option>
+            <option>India</option>
+            <option>Nepal</option>
+            <option>Russia</option>
+            <option>Sri Lanka</option>
+            <option>America</option>
+            <option>Africa</option>
+            </select><br><br>
+            Upload Profile Picture:<br>
+            <input type="button" value="Choose file">No file chosen
+        </form>
+    </div>
+   
+</body>
+</html>
